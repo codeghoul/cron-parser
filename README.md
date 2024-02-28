@@ -7,6 +7,20 @@ project includes an initialization script (`init.sh`) to set up the environment 
 
 Follow the steps below to set up the cron parser:
 
+### Step 0: Code Walkthrough
+
+The codebase is rather small, with:
+
+- [CronConstant](src/main/java/me/jysh/constant/CronConstants.java) : File to store magic numbers,
+  etc.
+- [InvalidExpressionException](src/main/java/me/jysh/exception/InvalidExpressionException.java) :
+  Custom exception for invalid expression.
+- [CronExpression](src/main/java/me/jysh/models/CronExpression.java) : Class to encapsulate a
+  CronExpression.
+- [CronParserUtil](src/main/java/me/jysh/utils) : Util class (with javadocs) which is responsible
+  for taking a raw expression and converting it into `CronExpression`.
+- [Main](src/main/java/me/jysh/Main.java) : Entry point.
+
 ### Step 1: Initialization
 
 Run the `init.sh` script to initialize the environment. Script has the following steps:
@@ -37,4 +51,6 @@ While the init step runs tests, you can run the tests again using
 ```bash
 mvn test
 ```
+
+or you can check out the test files @[Test Files](src/test/java)
 
