@@ -9,7 +9,14 @@ Follow the steps below to set up the cron parser:
 
 ### Step 1: Initialization
 
-Run the `init.sh` script to initialize the environment.
+Run the `init.sh` script to initialize the environment. Script has the following steps:
+
+- Install SDKMAN
+- Install Maven and Java 17 using SDKMAN
+- Set Java 17 as default
+- Display installed versions
+- Cleanup
+- Generate Target
 
 ```bash
 sh init.sh
