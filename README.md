@@ -17,7 +17,8 @@ The codebase is rather small, with:
   Custom exception for invalid expression.
 - [CronExpression](src/main/java/me/jysh/models/CronExpression.java) : Class to encapsulate a
   CronExpression.
-- [CronParserUtil](src/main/java/me/jysh/utils) : Util class (with javadocs) which is responsible
+- [CronParserUtil](src/main/java/me/jysh/utils/CronParserUtil.java) : Util class (with javadocs)
+  which is responsible
   for taking a raw expression and converting it into `CronExpression`.
 - [Main](src/main/java/me/jysh/Main.java) : Entry point.
 
